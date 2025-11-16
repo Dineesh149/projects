@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{
+            color: rgb(255, 255, 255);
+            
+            
+        }
+        .c1{
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 200px;
+            min-width: 450px;
+            padding: 25px ;
+            background-image: url(https://i.ibb.co/MynMLsP8/mountain.jpg);
+            margin: auto;
+
+
+            
+
+            
+        }
+        .b1{
+            color: azure;
+            position: relative;
+            left: 140px;
+            top: 10px;
+            padding: 10px 30px;
+            border: none;
+            background-color: rgb(3, 146, 10);
+            transition-duration: 0.5s;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+        }
+        .b1:hover{
+            box-shadow: 0 8px 20px 
+            rgba(0, 0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+<center>
+    
+    <div class="c1" style="border-radius: 2%;">
+    <h1>Registration Form</h1>
+    <form method="post">
+        <table class="tbl">
+            <tr>
+                <td>
+                     <label for="First Name">First Name</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Firstname" name="fname" minlength="3" maxlength="10" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Last Name">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Lastname" name="lname" minlength="1" maxlength="10" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="">Address</label>
+                </td>
+                <td>
+                    <textarea rows="5" cols="20" name="addr" style="width: 58%;"></textarea><br>                  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email id</label>
+                </td>
+                <td>
+                    <input type="email" name="email">                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Qualification</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="sslc">SSLC
+                    <input type="checkbox" name="hsc">HSC
+                    <input type="checkbox" name="diploma">DIPLOMA
+                    <input type="checkbox" name="btech">BTECH 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>District</label>                
+                </td>
+                <td>
+                    <select name="District">
+                        <option>Select</option>
+                        <option value="Tvm">Trivandrum</option>
+                        <option value="Klm">Kollam</option>
+                        <option value="Ptm">Pathanamthita</option>
+                        <option value="Alp">Alappuzha</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Mobile</label>
+                </td>
+                <td>
+                    <input type="text" name="mob" id="" pattern="^[7-9][0-9]{9}$" maxlength="10">                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="pswd" id=""minlength="5" maxlength="10">                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Upload Doc</label>
+                </td>
+                <td>
+                    <input type="file" name="file" accept="application/pdf">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="b1" type="submit">Register</button>
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    </div>
+</center>
+</body>
+</html>
